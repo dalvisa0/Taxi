@@ -90,7 +90,7 @@ namespace Taxi.Web.Data
                             Qualification = 4.5f,
                             Source = "UT Salado",
                             Target = "UT Santa Helena",
-                            Remarks = "Muy buen servicio",
+                            Remarks = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget tellus ipsum. In rhoncus sem a nisl consequat sodales. Quisque id odio vel felis porta congue accumsan vitae nisl. Morbi ut augue lectus. Fusce in lectus sed sem venenatis rutrum. Suspendisse rhoncus ac sapien id placerat. Suspendisse vel mattis metus. Curabitur blandit ante eget neque dignissim, vitae gravida arcu iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
                             User = user1
                         },
                         new TripEntity
@@ -100,7 +100,7 @@ namespace Taxi.Web.Data
                             Qualification = 4.8f,
                             Source = "UT Santa Helena",
                             Target = "UT Salado",
-                            Remarks = "Conductor muy amable",
+                            Remarks = "Fusce eu magna maximus, euismod diam eu, vehicula massa. Suspendisse blandit non orci vitae tincidunt. Quisque eget nisl a mauris ultricies elementum euismod nec massa. Quisque lobortis feugiat tellus in aliquam. Suspendisse vitae venenatis lorem. Pellentesque eget lorem hendrerit, lacinia risus sit amet, vulputate orci. Nam tortor ex, porttitor sit amet tempus ut, tincidunt eu massa.",
                             User = user1
                         }
                     }
