@@ -13,6 +13,10 @@ namespace Taxi.Web.Helpers
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly SignInManager<UserEntity> _signInManager;
 
+        public async Task<SignInResult> ValidatePasswordAsync(UserEntity user, string password)
+        {
+            return await _signInManager.CheckPasswordSignInAsync(user, password, false);
+        }
         public UserHelper(
             UserManager<UserEntity> userManager,
             RoleManager<IdentityRole> roleManager,
