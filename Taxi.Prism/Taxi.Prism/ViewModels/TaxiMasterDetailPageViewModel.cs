@@ -47,7 +47,7 @@ namespace Taxi.Prism.ViewModels
         public async void ReloadUser()
         {
             string url = App.Current.Resources["UrlAPI"].ToString();
-            if (Connectivity.NetworkAccess != NetworkAccess.Internet)
+            if(Connectivity.NetworkAccess != NetworkAccess.Internet)
             {
                 return;
             }

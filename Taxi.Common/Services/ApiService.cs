@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Taxi.Common.Models;
 using Xamarin.Essentials;
- //comentario inutil
+
 namespace Taxi.Common.Services
 {
     public class ApiService : IApiService
@@ -303,8 +303,7 @@ namespace Taxi.Common.Services
         }
         public bool CheckConnection()
         {
-
-            return (Connectivity.NetworkAccess == NetworkAccess.Internet);
+            return Connectivity.NetworkAccess == NetworkAccess.Internet;
         }
         public async Task<Response> GetTaxiAsync(string plaque, string urlBase, string servicePrefix, string controller)
         {
