@@ -5,6 +5,7 @@ namespace Taxi.Common.Services
 {
     public interface IApiService
     {
+        Task<Response> AddTripDetailsAsync(string urlBase, string servicePrefix, string controller, TripDetailsRequest model, string tokenType, string accessToken);
 
         Task<Response> NewTripAsync(string urlBase, string servicePrefix, string controller, TripRequest model, string tokenType, string accessToken);
 
