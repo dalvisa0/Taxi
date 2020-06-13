@@ -14,7 +14,7 @@
             <Color x:Key="ColorBackgroud">#FBFF87</Color>
             <Color x:Key="ColorPrimary">#3D3D3D</Color>
             <Color x:Key="ColorSecondary">#A6ABAB</Color>
-            <Color x:Key="ColorDanger">#FCEF87</Color>
+            <Color x:Key="ColorDanger">#f50000</Color>
             <Color x:Key="ColorAccent">#0029FA</Color>
             <Color x:Key="ColorFont">#3D3D3D</Color>
             <Color x:Key="ColorFontInverse">#FFFFFF</Color>
