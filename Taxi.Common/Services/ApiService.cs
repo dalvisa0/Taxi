@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Taxi.Common.Models;
 using Xamarin.Essentials;
-
+ //comentario inutil
 namespace Taxi.Common.Services
 {
     public class ApiService : IApiService
