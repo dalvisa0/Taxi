@@ -9,6 +9,7 @@
 
             <!-- Parameters -->
             <x:String x:Key="UrlAPI">https://taxiweb01.azurewebsites.net/</x:String>
+            <x:String x:Key="UrlNoImage">https://TaxiWeb01.azurewebsites.net/images/noimage.png</x:String>   
 
             <!-- Colors -->
             <Color x:Key="ColorBackgroud">#FBFF87</Color>
@@ -35,6 +36,10 @@
                 <Setter Property="BackgroundColor" Value="{StaticResource ColorFontInverse}" />
             </Style>
 
+            <Style TargetType="Picker">
+                <Setter Property="BackgroundColor" Value="{StaticResource ColorFontInverse}" />
+            </Style>
+            
             <Style x:Key="SecondaryButton" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="{StaticResource ColorSecondary}" />
             </Style>
