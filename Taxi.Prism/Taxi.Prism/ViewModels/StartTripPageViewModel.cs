@@ -37,6 +37,7 @@ namespace Taxi.Prism.ViewModels
         private Geocoder _geoCoder;
         private TripDetailsRequest _tripDetailsRequest;
 
+        private DelegateCommand _cancelTripCommand;
         private DelegateCommand _getAddressCommand;
         private DelegateCommand _startTripCommand;
 
@@ -52,6 +53,8 @@ namespace Taxi.Prism.ViewModels
             IsEnabled = true;
             LoadSourceAsync();
         }
+
+        public DelegateCommand CancelTripCommand => _cancelTripCommand ?? (_cancelTripCommand = new DelegateCommand(CancelTripAsync));
 
         public DelegateCommand GetAddressCommand => _getAddressCommand ?? (_getAddressCommand = new DelegateCommand(LoadSourceAsync));
 
@@ -114,7 +117,34 @@ namespace Taxi.Prism.ViewModels
 
             IsEnabled = true;
         }
+        private async void CancelTripAsync()
+        {
+            bool answer = await App.Current.MainPage.DisplayAlert(Languages.Confirmation, Languages.CancelTripConfirm, Languages.Yes, Languages.No);
+            if (!answer)
+            {
+                return;
+            }
 
+            IsRunning = true;
+            IsEnabled = false;
+
+            _timer.Stop();
+            bool connection = _apiService.CheckConnection();
+            if (Connectivity.NetworkAccess != NetworkAccess.Internet)
+            {
+                IsRunning = false;
+                IsEnabled = true;
+                await App.Current.MainPage.DisplayAlert(Languages.Error, Languages.ConnectionError, Languages.Accept);
+                return;
+            }
+
+            _apiService.DeleteAsync(_url, "/api", "/Trips", _tripResponse.Id, "bearer", _token.Token);
+
+            IsRunning = false;
+            IsEnabled = true;
+
+            await _navigationService.GoBackToRootAsync();
+        }
 
         private async void StartTripAsync()
         {

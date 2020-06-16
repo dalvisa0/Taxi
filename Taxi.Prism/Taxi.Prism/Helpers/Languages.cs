@@ -14,6 +14,13 @@ namespace Taxi.Prism.Helpers
             Culture = ci.Name;
             DependencyService.Get<ILocalize>().SetLocale(ci);
         }
+        public static string CancelTripConfirm => Resource.CancelTripConfirm;
+
+        public static string Confirmation => Resource.Confirmation;
+
+        public static string Yes => Resource.Yes;
+
+        public static string No => Resource.No;
 
         public static string GeolocationError => Resource.GeolocationError;
 

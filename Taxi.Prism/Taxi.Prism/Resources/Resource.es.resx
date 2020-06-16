@@ -354,4 +354,16 @@
   <data name="ConfirmAddress" xml:space="preserve">
     <value>Confirma tu dirección</value>
   </data>
+  <data name="CancelTripConfirm" xml:space="preserve">
+    <value>¿Quieres cancelar el viaje?</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>Confirmación</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Sí</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
 </root>

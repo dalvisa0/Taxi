@@ -286,7 +286,7 @@
     <value>Ok</value>
   </data>
   <data name="PictureSource" xml:space="preserve">
-    <value>¿Where do you want to take the picture?</value>
+    <value>Where do you want to take the picture?</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
@@ -353,5 +353,17 @@
   </data>
   <data name="ConfirmAddress" xml:space="preserve">
     <value>Confirm your address</value>
+  </data>
+  <data name="CancelTripConfirm" xml:space="preserve">
+    <value>Dou you want to cancel the trip?</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
   </data>
 </root>
