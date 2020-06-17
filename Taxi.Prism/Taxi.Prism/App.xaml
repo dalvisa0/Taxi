@@ -35,6 +35,10 @@
             <Style TargetType="Entry">
                 <Setter Property="BackgroundColor" Value="{StaticResource ColorFontInverse}" />
             </Style>
+            
+            <Style TargetType="Editor">
+                <Setter Property="BackgroundColor" Value="{StaticResource ColorFontInverse}" />
+            </Style>
 
             <Style TargetType="Picker">
                 <Setter Property="BackgroundColor" Value="{StaticResource ColorFontInverse}" />
