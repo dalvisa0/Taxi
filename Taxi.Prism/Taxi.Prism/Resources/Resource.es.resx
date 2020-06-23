@@ -148,7 +148,7 @@
     <value>Calificación</value>
   </data>
   <data name="NumberOfTrips" xml:space="preserve">
-    <value>Número de Viajes</value>
+    <value>Número de Viajes: </value>
   </data>
   <data name="Driver" xml:space="preserve">
     <value>Conductor(a)</value>
@@ -404,5 +404,8 @@
   </data>
   <data name="QualificationError" xml:space="preserve">
     <value>Debes ingresar una calificación del viaje.</value>
+  </data>
+  <data name="TripDetail" xml:space="preserve">
+    <value>Detalle del viaje</value>
   </data>
 </root>

@@ -898,6 +898,15 @@ namespace Taxi.Prism.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Trip Detail.
+        /// </summary>
+        internal static string TripDetail {
+            get {
+                return ResourceManager.GetString("TripDetail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to User.
         /// </summary>
         internal static string User {

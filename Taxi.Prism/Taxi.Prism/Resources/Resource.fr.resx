@@ -405,4 +405,7 @@
   <data name="QualificationError" xml:space="preserve">
     <value>Vous devez entrer dans une qualitification voyage.</value>
   </data>
+  <data name="TripDetail" xml:space="preserve">
+    <value>Détail du voyage</value>
+  </data>
 </root>

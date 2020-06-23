@@ -77,7 +77,13 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-
+                <Label
+                    FontAttributes="Bold"
+                           FontSize="Medium"
+                           Text="Version 1.0"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="End"/>
             </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>
